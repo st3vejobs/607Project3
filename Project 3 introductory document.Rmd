@@ -1,0 +1,44 @@
+---
+title: "Project 3 Document 1"
+author: "Shane Hylton, Tyler Baker, Noah Collin"
+date: "10/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Communication Methods
+
+Our team will be using Slack for day to day communication and information sharing. We will be using Github and rpubs for additional document sharing. We have already created a Slack Channel for the project. We are using Google Meet to collaborate further on the project.
+
+## Data Sources
+
+We used Kaggle to find a number of good datasets that describe various data scientist and data analyst job listings. We will be working through the three datasets to find various key words and key skills that are shared across the three datasets to help isolate the most important skills for data scientists. 
+
+https://www.kaggle.com/andrewmvd/data-analyst-jobs
+
+https://www.kaggle.com/andrewmvd/data-scientist-jobs
+
+https://www.kaggle.com/sl6149/data-scientist-job-market-in-the-us
+
+We will use Tableau to visualize the Entity Relationship model. The goal is to join two or three data sets to compare data scientist and data analyst jobs and their descriptions. From the job descriptions, we will seek out the best keywords that various companies are seeking. 
+
+Our plan is to create a word cloud to collect the key words for the job descriptions and find the most highly sought after skills. 
+## Loading The Data
+
+We are going to use github to store and load our datasets. They will be stored in github as .csv files and we will read them from github.
+The github repository link is below:
+
+https://github.com/st3vejobs/607Project3
+
+## Logical Model and Entity Relationship Diagram
+
+The logical model was constructed using Tableau. We are taking the three datasets and we are finding links between them. The final dataframe will pull job descriptions from each dataset and we will analyze the keywords across each. The datasets will be joined using company names. 
+
+
+
+
+
+
