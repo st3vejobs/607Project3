@@ -1,0 +1,7 @@
+CREATE TABLE AllData(
+	position_ VARCHAR (255),
+	company VARCHAR (255),
+	description VARCHAR (51843),
+	reviews INT,
+	Location_  VARCHAR (255)
+);

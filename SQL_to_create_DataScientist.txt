@@ -1,0 +1,19 @@
+CREATE TABLE DataScientist(
+	Index_ INT,
+	Index2_ INT,
+	JobTitle VARCHAR (255),
+	SalaryEstimate VARCHAR (255),
+	JobDescription VARCHAR (21843),
+	Rating NUMERIC,
+	CompanyName VARCHAR (255),
+	Location_  VARCHAR (255),
+	Headquarters VARCHAR (255),
+	Size_ VARCHAR (255),
+	Founded INT,
+	TypeOfOwnership VARCHAR (255),
+	Industry VARCHAR (255),
+	Sector VARCHAR (255),
+	Revenue VARCHAR (255),
+	Competitors VARCHAR (255),
+	EasyApply VARCHAR (255)
+);
