@@ -15,11 +15,14 @@ library(ggplot2)
 library(ggwordcloud)
 ```
 
-## Read in CSVs (which came from Postgres Relational Database)
-We used a relational database in Postgres to help determine which columns were consistent across the datasets. 
-
+# Project: What are the most important data science skills?
+### Goals
+In this project, we seek to answer this question by collecting all of the words among a wide number of job descriptions. We will take all of the words and create word cloud plots to show which words occur most frequently in job descriptions. This should provide us with sufficient information to determine the most highly sought after data science skills. 
 
 ## Loading the Data
+
+We used a relational database in Postgres to help determine which columns were consistent across the datasets.
+The data was downloaded from Kaggle and it was uploaded to github for easy downloading into R. Links to the Kaggle pages can be found at the bottom of the RMarkdown document. The datasets consist of wide dataframes with column information on various job listings for data analysts and data scientists. 
 
 ```{r read in DataAnalyst.csv and DataScientist.csv}
 linka <- 'https://raw.githubusercontent.com/st3vejobs/607Project3/main/DataAnalyst.csv'
@@ -224,7 +227,7 @@ head(freqplot)
 freqbar <- freqplot[1:10, ]
 ggplot(freqbar, aes(x = word, y = count, color = word, fill = word))+
   geom_col()+
-  ggtitle("All Job Descriptions, Top 50 Key Skills") +
+  ggtitle("All Job Descriptions, Top 10 Keywords") +
   xlab("Key Word")+
   ylab("Count")+
   theme(plot.title = element_text(hjust = 0.5))+
@@ -232,7 +235,7 @@ ggplot(freqbar, aes(x = word, y = count, color = word, fill = word))+
 ```
 
 
-## Comments and Further Exploration
+## Comments
 
 The biggest in demand skill for data science is experience. Business is another commonly used keyword. Team, development, learning, and work showed up many times as well. 
 
@@ -240,12 +243,22 @@ The biggest in demand skill for data science is experience. Business is another 
 #### A few ideas for further analysis:
 Combine plurals and singulars, for example, team and teams. 
 We could use the same techniques to gather all instances of programming languages that are listed in job descriptions to help determine which languages are more valuable than others. 
+We could find a way to loop through the data and make a dictionary for strings of more than one word in order to provide a clearer picture of important skills, like "interpersonal skills."
 
 #### Team Notes
 Our team met and worked together concurrently for a combined 8 hours. Individual contributions were also made outside of the team meetings. We used Google Meet for synchronous meetings and Slack for daily communication. Nearly all of the work was performed through collaborative discussion.
 
 
 
+### Data Sources
+
+The data was pulled from kaggle. 
+
+We used two datasets for our final analysis in R.
+
+https://www.kaggle.com/andrewmvd/data-analyst-jobs
+
+https://www.kaggle.com/andrewmvd/data-scientist-jobs
 
 
 
